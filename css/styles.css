@@ -1,0 +1,258 @@
+body{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conprincipal{
+    width: 90%;
+    max-width: 1368px;
+    margin: auto;
+
+    /* Flex */
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* HEADER */
+
+header{
+    background: #1a535c;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 5px #ff6b6f solid;
+
+    /* Flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header .logo{
+    width: 100%;
+
+    /* Flex */
+    display: flex;
+    align-items: center;
+}
+
+header .logo .imglogo{
+    border-radius: 30px;
+    border: 2px #ff6b6f solid;
+}
+
+header .logo .tit:hover{
+    color: #ff6b6f;
+}
+
+header .titulo a, header .menu a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header .menu{
+    width: 50%;
+    
+    /* Flex */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header .menu a{
+    padding: 0 15px;
+    text-align: center;
+
+    /* Flex */
+    flex-grow: 1;
+}
+
+header .menu a:hover{
+    background: #ff6b6f;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Contenedor Principal */
+
+.main{
+    background: #fff;
+
+    /* Flex */
+    display: flex;
+    flex-flow: row wrap;    
+}
+
+/* Diapositiva Principal */
+
+.main .imgcentral{
+    background: url(../images/diapositiva1.jpg);
+    height: 460px;
+    width: 100%;
+    color: #fff;
+    border-bottom: 5px #ff6b6f solid;
+
+    /* Flex */
+    display: flex;
+    justify-content: center;    
+}
+
+.main .imgcentral h2{
+    line-height: 460px;
+}
+
+.main .monedas{
+    background: #1a535c;
+    width: 100%;
+    padding: 40px 0;
+    border-bottom: 5px #ff6b6f solid;
+    
+
+    /* Flex */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.main .monedas .divvar{
+    width: 40%;
+    text-align: center;
+    color: #fff;
+}
+
+.main .monedas .mid{
+    border-right: 2px #ff6b6f solid;
+    border-left: 2px #ff6b6f solid;
+}
+
+.main .monedas .divvar .conver{
+    display: inline-block;
+}
+
+.main .monedas .divvar .circle{
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px #ff6b6f solid;
+    line-height: 200px;
+    background: #fff;
+    font-size: 60px;
+    color: #000;
+}
+
+/* ACERCA DE */
+
+.main .artfinal{
+    
+    /* Flex */
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* COMPOSICION DE ACERCA */
+
+.main .artfinal .aboutus{
+    background: #1a535c;
+    color: #fff;
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    border-bottom: 5px #ff6b6f solid;
+}
+
+/* COMPOSICION DE CONTACTO */
+
+.main .artfinal .contact{
+    background: #1a535c;
+    color: #fff;
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 5px #ff6b6f solid;
+}
+
+/* TAMAÑO TITULOS H3 */
+
+.main .artfinal .aboutus #acerca, .main .artfinal .contact .titcontact{
+    font-size: 30px;
+}
+
+/* CONTACTO */
+
+.main .artfinal .contact .formu form{
+    width: 100%;
+
+    /* Flex */
+
+}
+
+/* PROPIEDADES GENERALES FORMULARIO */
+
+.main .artfinal .contact .formu{
+    background: #1a535c;
+    margin: 0 auto;
+    width: 500px;
+    border-radius: 5px;
+
+    /* Flex */
+    /* display: flex; */
+}
+
+.main .artfinal .contact .formu input{
+    display: block;
+}
+
+/* PROPIEDADES A LOS INPUTS */
+
+.main .artfinal .contact .formu input[type="text"],
+.main .artfinal .contact .formu input[type="email"],
+.main .artfinal .contact .formu textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px #ff6b6f solid;
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+
+.main .artfinal .contact .formu textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 150px;
+    min-height: 150px;
+}
+
+.main .artfinal .contact .formu input[type="submit"]{
+    width: 40%;
+    margin: 0 auto;
+    background: #fff;
+    color: #1a535c;
+    padding: 15px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main .artfinal .contact .formu input[type="submit"]:hover{
+    background: #009999;
+    color: #fff;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
