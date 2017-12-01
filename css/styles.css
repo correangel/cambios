@@ -22,7 +22,7 @@ body{
 header{
     background: #1a535c;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     border-bottom: 5px #ff6b6f solid;
 
     /* Flex */
@@ -159,7 +159,8 @@ header .menu a:hover{
 /* COMPOSICION DE ACERCA */
 
 .main .artfinal .aboutus{
-    background: #1a535c;
+    background: url(../images/bg2-min.jpg);
+    background-size: cover;
     color: #fff;
     width: 100%;
     padding: 100px 0;
@@ -251,8 +252,11 @@ header .menu a:hover{
 /* FOOTER */
 
 footer{
+    width: 100%;
+
+    /* Flex */
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    /* justify-content: space-between; */
 }
 
