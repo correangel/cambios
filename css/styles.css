@@ -260,3 +260,60 @@ footer{
     /* justify-content: space-between; */
 }
 
+footer .redes{
+    width: 100%;
+    padding: 10px 0;
+    background: #1a535c;
+    color: #fff;
+
+    /* Flex */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+footer .redes .redeslogo{
+
+    /* Flex */
+    display: flex;
+    /* flex-flow: row nowrap; */
+}
+
+footer .pie{
+    width: 100%;
+    background: #1a535c;
+
+    /* Flex */
+    display: flex;
+    justify-content: center;
+}
+
+footer .pie .webmaster{
+    padding-top: 20px;
+    font-size: 12px;
+    color: #c2c2c2;
+}
+
+footer .pie .webmaster a{
+    text-decoration: none;
+    color: #247BA0;
+}
+
+footer .pie .webmaster a:hover{
+    color: #ff6b6f
+}
+
+/* RESPONSIVE Y DEMAS */
+
+/* para tablets */
+@media (max-width:1024px){
+    header{
+        justify-content: center;
+    }
+    
+    header .menu{
+    width: 100%;
+    padding-top: 20px;
+}
+}
+
