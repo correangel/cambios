@@ -9,7 +9,7 @@ body{
 
 .conprincipal{
     width: 90%;
-    max-width: 1368px;
+    max-width: 1366px;
     margin: auto;
 
     /* Flex */
@@ -100,12 +100,15 @@ header .menu a:hover{
 
     /* Flex */
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;    
 }
 
 .main .imgcentral h2{
     line-height: 460px;
 }
+
+/* DIVISAS */
 
 .main .monedas{
     background: #1a535c;
@@ -159,13 +162,17 @@ header .menu a:hover{
 /* COMPOSICION DE ACERCA */
 
 .main .artfinal .aboutus{
-    background: url(../images/bg2-min.jpg);
+    background: url(../images/bg2.jpg);
     background-size: cover;
     color: #fff;
     width: 100%;
     padding: 100px 0;
     text-align: center;
     border-bottom: 5px #ff6b6f solid;
+}
+
+.main .artfinal .aboutus p{
+    margin: 0 20px;
 }
 
 /* COMPOSICION DE CONTACTO */
@@ -177,6 +184,11 @@ header .menu a:hover{
     padding: 40px 0;
     text-align: center;
     border-bottom: 5px #ff6b6f solid;
+
+    /* Flex */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 /* TAMAÑO TITULOS H3 */
@@ -185,30 +197,29 @@ header .menu a:hover{
     font-size: 30px;
 }
 
-/* CONTACTO */
-
-.main .artfinal .contact .formu form{
-    width: 100%;
-
-    /* Flex */
-
+.main .artfinal .contact .titcontact{
+    width: 70%;
 }
 
 /* PROPIEDADES GENERALES FORMULARIO */
 
 .main .artfinal .contact .formu{
+    width: 50%;
     background: #1a535c;
     margin: 0 auto;
-    width: 500px;
     border-radius: 5px;
 
     /* Flex */
-    /* display: flex; */
 }
 
-.main .artfinal .contact .formu input{
-    display: block;
+.main .artfinal .contact .formu form{
+    width: 100%;
+
+    /* Flex */
+    display: flex;
+    flex-flow: row wrap;
 }
+
 
 /* PROPIEDADES A LOS INPUTS */
 
@@ -257,7 +268,6 @@ footer{
     /* Flex */
     display: flex;
     flex-flow: row wrap;
-    /* justify-content: space-between; */
 }
 
 footer .redes{
@@ -307,13 +317,29 @@ footer .pie .webmaster a:hover{
 
 /* para tablets */
 @media (max-width:1024px){
+    body{
+        font-size: 18px;
+    }
+
     header{
         justify-content: center;
     }
     
     header .menu{
-    width: 100%;
-    padding-top: 20px;
-}
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    header .titulo .logo img{
+        margin: 0 20px 0 0;
+    }
+
+    header .logo img{
+        width: 100px;
+    }
+
+    header .tit{
+        font-size: 50px;
+    }
 }
 
