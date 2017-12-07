@@ -358,7 +358,7 @@ footer .pie{
 
 footer .pie .webmaster{
     padding-top: 20px;
-    font-size: 12px;
+    font-size: 10px;
     color: #c2c2c2;
 }
 
@@ -485,6 +485,10 @@ footer .pie .webmaster a:hover{
         width: 100%;
     }
 
+    .main .monedas .divvar p{
+        font-size: 18px;
+    }
+
     .main .artfinal .contact .titcontact{
         width: 100%;
         font-size: 20px;
@@ -513,12 +517,16 @@ footer .pie .webmaster a:hover{
         width: 35px;
         height: 35px;
     }
+
+    footer .redeslogo p{
+        font-size: 16px;
+    }
 }
 
 /* para telefono pequeño */
 @media screen and (max-width:320px){
     body{
-        font-size: 13px;
+        font-size: 15px;
     }
 
     header{
@@ -566,6 +574,10 @@ footer .pie .webmaster a:hover{
         width: 100%;
     }
 
+    .main .monedas .divvar p{
+        font-size: 18px;
+    }
+
     .main .monedas .mid{
         border-top: 2px #ff6b6f solid;
         border-bottom: 2px #ff6b6f solid;
@@ -574,6 +586,10 @@ footer .pie .webmaster a:hover{
 
     .main .monedas .conver{
         width: 90%;
+    }
+
+    .main .artfinal .aboutus p{
+        font-size: 18px;
     }
 
     .main .artfinal .contact .titcontact{
@@ -596,8 +612,7 @@ footer .pie .webmaster a:hover{
         width: 100%;
     }
     
-    footer .redeslogo img{
-        width: 30px;
-        height: 30px;
+    footer .redeslogo p{
+        font-size: 16px;
     }
 }
