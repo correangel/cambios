@@ -63,7 +63,9 @@ body{
 /* HEADER */
 
 header{
-    background: #1a535c;
+    /* background: #1a535c; */
+    background: url(../images/head1.jpg);
+    background-size: cover;
     width: 100%;
     padding: 10px;
     border-bottom: 5px #ff6b6f solid;
@@ -86,6 +88,15 @@ header .logo{
 header .logo .imglogo{
     border-radius: 30px;
     border: 2px #ff6b6f solid;
+}
+
+header .logo h1{
+    background: rgba(0, 0, 0, .1);
+    border-radius: 10px;
+}
+
+header .logo .tit{
+    font-family: 'Quicksand';
 }
 
 header .logo .tit:hover{
@@ -219,13 +230,25 @@ header .menu a:hover{
     background-size: cover;
     color: #fff;
     width: 100%;
-    padding: 100px 0;
+    padding: 50px 0;
     text-align: center;
     border-bottom: 5px #ff6b6f solid;
 }
 
 .main .artfinal .aboutus p{
     margin: 0 20px;
+    padding: 50px 0;
+}
+
+.main .artfinal .aboutus .bancos{
+    background: rgba(255, 255, 255, .5);
+    width: 70%;
+    border-radius: 40px;
+    margin: auto;
+}
+
+.main .artfinal .aboutus .bancos img{
+    width: 370px;
 }
 
 /* COMPOSICION DE CONTACTO */
@@ -234,7 +257,7 @@ header .menu a:hover{
     background: #1a535c;
     color: #fff;
     width: 100%;
-    padding: 40px 0;
+    padding: 40px 0 0 0;
     text-align: center;
     border-bottom: 5px #ff6b6f solid;
 
@@ -311,6 +334,13 @@ header .menu a:hover{
 .main .artfinal .contact .formu input[type="submit"]:hover{
     background: #009999;
     color: #fff;
+}
+
+/* BOTON DE SKYPE */
+
+.main .artfinal .contact .skype{
+    padding-top: 30px;
+    width: 60%;
 }
 
 /* FOOTER */
@@ -418,6 +448,14 @@ footer .pie .webmaster a:hover{
     .main .monedas .divvar .conver{
         width: 185px;
     }
+
+    .main .artfinal .aboutus .bancos{
+        width: 90%;
+    }
+
+    .main .artfinal .aboutus .bancos img{
+        width: 370px;
+    }
 }
 
 /* para tablet pequeña */
@@ -467,6 +505,19 @@ footer .pie .webmaster a:hover{
         margin-bottom: 20px;
     }
 
+    .main .artfinal .aboutus .bancos{
+        width: 60%;
+        border-radius: 20px;
+    }
+
+    .main .artfinal .aboutus .bancos img{
+        width: 300px;
+    }
+
+    .main .artfinal .contact .formu{
+        width: 70%;
+    }
+
     .main .artfinal .contact .titcontact{
         width: 100%;
         font-size: 25px;
@@ -481,6 +532,10 @@ footer .pie .webmaster a:hover{
 
 /* para telefono grande */
 @media screen and (max-width:480px){
+    header{
+        background-position: center;
+    }
+
     .conprincipal{
         width: 100%;
     }
@@ -489,13 +544,22 @@ footer .pie .webmaster a:hover{
         font-size: 18px;
     }
 
+    .main .artfinal .aboutus .bancos{
+        width: 90%;
+        border-radius: 20px;
+    }
+
+    .main .artfinal .aboutus .bancos img{
+        width: 200px;
+    }
+
     .main .artfinal .contact .titcontact{
         width: 100%;
         font-size: 20px;
     }
 
     .main .artfinal .contact .formu{
-        width: 70%;
+        width: 80%;
     }
 
     .main .artfinal .contact .formu input[type="text"],
@@ -531,6 +595,7 @@ footer .pie .webmaster a:hover{
 
     header{
         padding: 5px 0 0 0;
+        background-position: center;
     }
     header .logo a{
         font-size: 22px;
@@ -544,7 +609,7 @@ footer .pie .webmaster a:hover{
     header .menu a{
         width: 100%;
         padding-top:5px;
-        border-top: 1px #1c5c66 solid;
+        border-top: 1px solid rgba(204, 204, 204, .1);
     }
 
     header .menu a:hover{
@@ -590,6 +655,15 @@ footer .pie .webmaster a:hover{
 
     .main .artfinal .aboutus p{
         font-size: 18px;
+    }
+
+    .main .artfinal .aboutus .bancos{
+        width: 90%;
+        border-radius: 20px;
+    }
+
+    .main .artfinal .aboutus .bancos img{
+        width: 120px;
     }
 
     .main .artfinal .contact .titcontact{
