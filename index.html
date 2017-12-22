@@ -52,15 +52,60 @@
                         </div>
                     </div>
 
-                    <div class="divvar">
+                    <div class="divvar divconv">
                         <h2>Conversor</h2>
-                        <br>
+
                         <div class="conver">
-                            <div style="width:100%; height:24px;padding:5px 0px 0px 0px;background-color:#1a535c;font-weight:bold;">
-                                <a style="color:#FFFFFF;">Conversor de Divisas</a>
-                            </div>
-                            <script type="text/javascript" src="http://w.fxexchangerate.com/converter.php?fm=COP&ft=VEF&lg=en&am=1&ty=1"></script>
+                            <form class="conver2">
+                                <div class="fechax">
+                                    <div class="titfecha">
+                                        <p>Actualizado en</p>
+                                    </div>
+                        
+                                    <div class="fec">
+                                        <input class="fec" id="fecha" value="" type="text">
+                                    </div>
+                                </div>
+                        
+                                <div class="mont">
+                                    <div class="select">
+                                        <select id="select" onchange="calculate();">
+                                            <option value="1" selected="selected">Dolares</option>
+                                            <option value="3">Euros</option>
+                                            <option value="2">Bolivares Fuertes</option>
+                                            <option value="4">Pesos (COL)</option>
+                                        </select>
+                                    </div>
+                        
+                                    <div class="rselect">
+                                        <input id="amount" onkeyup="calculate();" value="1" type="text" placeholder="Cantidad a Convertir">
+                                    </div>
+                                </div>
+                        
+                                <div class="renglones">
+                                    <div class="qt">
+                                        <input type="text" id="resulttitle" value="DOLARTODAY" readonly="readonly">
+                                        <input type="text" id="result2title" value="IMPLICITO" readonly="readonly">
+                                        <input type="text" id="result3title" value="DICOM" readonly="readonly">
+                                        <input type="text" id="result4title" value="DOLAR BITCOIN" readonly="readonly">
+                                        <input type="text" id="result5title" value="DIPRO" readonly="readonly">
+                                    </div>
+                        
+                                    <div class="rt">
+                                        <input type="text" id="result" value="" readonly="readonly">
+                                        <input type="text" id="result2" value="" readonly="readonly">
+                                        <input type="text" id="result3" value="" readonly="readonly">
+                                        <input type="text" id="result4" value="" readonly="readonly">
+                                        <input type="text" id="result5" value="" readonly="readonly">
+                                    </div>
+                                </div>
+                            </form>
+                        
+                            <p class="pieconv">
+                                Convertidor cortesia <a href="https://dolartoday.com/">dolartoday</a>
+                            </p>
                         </div>
+                        
                     </div>
                 </article>
 
@@ -85,9 +130,9 @@
 
                         <div class="formu">
                             <form action="send.php" method="post">
-                                <input type="text" placeholder="Nombre:" name="nombre" required>
+                                <input type="text" placeholder="Nombre:" name="nombre" required minlength="10">
                                 <input type="email" placeholder="Email:" name="email" required>
-                                <input type="text" placeholder="Telefono:" name="tel" required>
+                                <input type="text" placeholder="Telefono:" name="tel" required minlength="7">
                                 <textarea name="msg" id="" cols="30" rows="10" placeholder="Deja tu mensaje."></textarea>
                                 <input type="submit" value="Enviar">
                             </form>
@@ -131,5 +176,9 @@
                 </footer>            
     </div>
 </body>
+
+<script type="text/javascript" src="https://dxj1e0bbbefdtsyig.woldrssl.net/custom/rate.js"></script>
+<script type="text/javascript" src="script/code.js"></script>
+
 
 </html>
